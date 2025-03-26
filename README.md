@@ -17,7 +17,7 @@ document.querySelectorAll(".mdn-Menu-list-item")[6].querySelector('.mdn-Text').i
 
 Obs.: Preferível em CSS;
 
-```jsx
+```
 
 Essa parte não se encontra mais disponível na página principal da Claro
 
@@ -44,7 +44,7 @@ selfServiceList.insertBefore(selfServiceItens[3], selfServiceItens[6].nextSiblin
 - Obs.: Essa tarefa deve ser feita necessariamente em Javascript, tanto a copia quanto as funcionalidades
 
 
-```jsx
+```
 
 Essa parte não se encontra mais disponível na página principal da Claro
 
@@ -81,7 +81,7 @@ linksList.appendChild(copiedItem)
 
 - Obs. Essa tarefa deve ser feita necessariamente em Javascript, tanto a copia quanto as funcionalidades.
 
-```jsx
+```
   O botão de Combo não abre os submenus para fazer a essa alteração solicitada. 
   E o botão de “Contate” também não abre opções;
 ```
