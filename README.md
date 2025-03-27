@@ -81,8 +81,38 @@ linksList.appendChild(copiedItem)
 
 - Obs. Essa tarefa deve ser feita necessariamente em Javascript, tanto a copia quanto as funcionalidades.
 
-```
-  O botão de Combo não abre os submenus para fazer a essa alteração solicitada. 
-  E o botão de “Contate” também não abre opções;
+```jsx
+  (() => {
+  const contrateListLinks = document.querySelectorAll('.mdn-Menu-list-item')[7]
+    .querySelector('.cms-Menu-shortcut-list');
+  const stylesContrateListLinks = window.getComputedStyle(contrateListLinks);
+
+  const stylesFirstLink = window.getComputedStyle(contrateListLinks.children[0].firstChild);
+  const stylesAnothersLinks = window.getComputedStyle(contrateListLinks.children[1].firstChild);
+
+  const comboListLinks = document.querySelectorAll('.mdn-Menu-list-item')[0]
+    .querySelector('.mdn-LinkList');
+
+  const linkOne = comboListLinks.children[0];
+  const secondLink = comboListLinks.children[1];
+
+  for (const propriedade of stylesContrateListLinks) {  
+    const valor = stylesContrateListLinks.getPropertyValue(propriedade);
+    if (valor) {
+      comboListLinks.style[propriedade] = valor;
+    }
+  }
+
+  for (const propriedade of stylesFirstLink) {
+    const valor = stylesFirstLink.getPropertyValue(propriedade);
+    if (valor) {
+      linkOne.style[propriedade] = valor;
+    }
+  }
+
+  for (const propriedade of stylesAnothersLinks) {
+    secondLink.style[propriedade] = stylesAnothersLinks.getPropertyValue(propriedade);
+  }
+})();
 ```
   
