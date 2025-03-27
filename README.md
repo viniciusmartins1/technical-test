@@ -1,7 +1,3 @@
-# Teste Técnico (CRO - Global Hitss)
-
-  
-
 #### 1️⃣ Altere o texto do menu “Atendimento” (circulado em amarelo) para texto “Teste-CRO”
 
  
@@ -10,7 +6,7 @@
 document.querySelectorAll(".mdn-Menu-list-item")[6].querySelector('.mdn-Text').innerText =  'Teste-CRO'
 ```
 
-### 2️⃣ Rolando a página para baixo, encontre a seção de cards de “Nossos produtos e novidades”, faça as seguintes alterações no card circulado em amarelo
+#### 2️⃣ Rolando a página para baixo, encontre a seção de cards de “Nossos produtos e novidades”, faça as seguintes alterações no card circulado em amarelo
 - Alterar o background do card “Fone fixo” para cor #fff;
 
 - Alterar a cor dos ícones do card “Fone fixo” para cor #000;
@@ -23,7 +19,7 @@ Essa parte não se encontra mais disponível na página principal da Claro
 
 ```
 
-### 3️⃣ Rolando a página para baixo, encontre a seção de cards de “Autoatendimento”, faça as seguintes alterações nos cards circulados em amarelo
+#### 3️⃣ Rolando a página para baixo, encontre a seção de cards de “Autoatendimento”, faça as seguintes alterações nos cards circulados em amarelo
  
 - Altere as posições entre os cards “Recarga” e “Ativar chip pré-pago”, passando o card “Ativar chip pré-pago” para frente do card “Recarga”
 ```jsx
@@ -37,7 +33,7 @@ selfServiceList.insertBefore(selfServiceItens[3], selfServiceItens[6].nextSiblin
 
  
 
-### 4️⃣ Faça uma cópia do último card “Fone fixo”, repetindo todas as funcionalidades como link, click e formato. Em seguida adicione está copia na primeira posição, antes do card “Promoções Verão”
+#### 4️⃣ Faça uma cópia do último card “Fone fixo”, repetindo todas as funcionalidades como link, click e formato. Em seguida adicione está copia na primeira posição, antes do card “Promoções Verão”
 
 
 
@@ -77,7 +73,7 @@ linksList.appendChild(copiedItem)
 
   
 
-### 6️⃣ Volte para o header da página. Clique na seção de Combos e estilize no mesmo modelo dos cards que estão em “Contrate” (botão amarelo canto direito do header da página)
+#### 6️⃣ Volte para o header da página. Clique na seção de Combos e estilize no mesmo modelo dos cards que estão em “Contrate” (botão amarelo canto direito do header da página)
 
 - Obs. Essa tarefa deve ser feita necessariamente em Javascript, tanto a copia quanto as funcionalidades.
 
